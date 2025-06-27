@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Penjelasan Singkat Materi</title>
+    <link rel="stylesheet" href="../css/materi.css" />
+    <link rel="icon" href="../foto/logoKruskalofix.png" type="image/png">
+</head>
+
+<body>
+
+    <div id="pembungkusNavbar">
+        <div id="navbar">
+
+            <!-- Logo + Nama -->
+
+            <li class="pembungkusNama">
+                <a href="../index.html" class="aLogo">
+                    <img src="../foto/logoKruskalofix.png" alt="Logo" class="logo" />
+                </a>
+                <div class="garis"></div>
+                <a href="../index.html" class="kruskalofix">Kruskalofix</a>
+            </li>
+
+            <!-- Menu Navigasi -->
+
+            <ul class="pembungkusMenu">
+                <li><a href="../index.html" class="a">Beranda</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="a">Fitur</a>
+                    <ul class="dropdown-content">
+                        <li><a href="../html/cariMSTwarnet.html">Simulasi Kruskal</a></li>
+                        <li><a href="../html/materi.html">Pelajari Materi</a></li>
+                        <li><a href="../html/jurnal.html" target="_blank">Lihat Jurnal Kami</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../html/tentangKami.html" class="a" id="tentangKami">Tentang Kami</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Penjelasan Singkat Materi Graf dan Algoritma Kruskal</h1>
+
+        <section id="graf">
+            <h2>Apa itu Graf?</h2>
+            <p>Graf adalah struktur data yang terdiri dari simpul (node/vertex) dan sisi (edge). Graf digunakan untuk merepresentasikan relasi antar objek, contohnya jaringan komputer, peta jalan, atau hubungan pertemanan. Graf memiliki banyak jenis, berikut
+                macam-macam graf.
+            </p>
+            <ul>
+                <h2>Graf Tidak Berarah</h2>
+                <p>
+                    Graf tidak berarah adalah graf yang tidak memiliki arah pada setiap sisi. Contoh:
+                </p>
+                <div id="divGambarGTB">
+                    <img src="../foto/gambarGTB.png" alt="Graf Tidak Berarah" class="gambarContoh" />
+                </div>
+
+                <h2>Graf Berarah</h2>
+                <p>
+                    Graf berarah adalah graf yang memiliki arah pada setiap sisi. Contoh:
+                </p>
+                <div id="divGambarGBerarah">
+                    <img src="../foto/gambarGBerarah.png" alt="Graf Berarah" class="gambarContoh" />
+                </div>
+
+                <h2 id="GBerbobot">Graf Berbobot</h2>
+                <p>
+                    Graf berbobot adalah graf yang sisinya memiliki nilai. Contoh:
+                </p>
+                <div id="divGambarGBerbobot">
+                    <img src="../foto/gambarGBerbobot.png" alt="Graf Berarah" class="gambarContoh" />
+                </div>
+            </ul>
+        </section>
+
+        <section id="pohon">
+            <h2>Apa itu Pohon?</h2>
+            <p>Pohon adalah graf tak berarah yang terhubung dan tidak mengandung siklus. Artinya, dalam sebuah pohon, semua simpul saling terhubung tanpa adanya jalur melingkar. Setiap pasangan simpul hanya terhubung oleh satu jalur unik.
+            </p>
+            <p>Jika sebuah pohon memiliki n simpul, maka jumlah sisinya selalu tepat <strong>n - 1</strong>. Ini karena setiap penambahan sisi baru pada pohon akan menciptakan siklus, yang bertentangan dengan definisi pohon.</p>
+            <p>Semua pohon merupakan bagian dari graf, karena pohon adalah salah satu jenis graf khusus. Namun, tidak semua graf merupakan pohon, karena graf umum bisa saja mengandung siklus atau tidak terhubung sepenuhnya.</p>
+            <p>Berikut contoh pohon: </p>
+            <div id="divGambarPohon">
+                <img src="../foto/gambarPohon.png" alt="Graf Berarah" class="gambarContoh" />
+            </div>
+        </section>
+
+        <section id="mst">
+            <h2>Apa itu Minimum Spanning Tree (MST)?</h2>
+            <p>Minimum Spanning Tree (MST) adalah pohon merentang minimum dari sebuah graf berbobot. Artinya, MST menghubungkan semua simpul dalam graf dengan total bobot sisi serendah mungkin, tanpa membentuk siklus.</p>
+            <p>Dalam sebuah graf berbobot, bisa saja ada banyak cara menghubungkan semua simpul. Namun, MST mencari kombinasi sisi-sisi dengan bobot total terkecil yang tetap membuat semua simpul terhubung.</p>
+            <p><strong>Ciri-ciri MST: </strong></p>
+            <ol>
+                <li>Menghubungkan semua simpul dalam graf.</li>
+                <li>Tidak mengandung siklus.</li>
+                <li>Memiliki total bobot sisi yang paling kecil dibandingkan semua pohon merentang lainnya.
+                </li>
+            </ol>
+            <p>Beberapa algoritma yang umum digunakan untuk menemukan MST adalah algoritma Kruskal dan algoritma Prim. Di
+                <strong> Kruskalofix</strong>, kamu dapat melihat bagaimana algoritma Kruskal bekerja secara visual untuk membangun MST.
+            </p>
+            <p>Berikut contoh graf sebelum ditentukan MST-nya dengan total bobot 46:</p>
+            <div id="divGambarContohSebelumMST">
+                <img src="../foto/gambarContohSebelumMST.png" alt="Graf Berarah" class="gambarContohMST" />
+            </div>
+            <p>Setelah MST dari graf di atas ditentukan, dapat dilihat grafnya menjadi:</p>
+            <div id="divGambarPohon">
+                <img src="../foto/gambarContohSetelahMST.png" alt="Graf Berarah" class="gambarContohMST" />
+            </div>
+            <p>Maka diperoleh total bobot MST sebesar 37, di mana efisien 9 jarak dibanding tidak mencari MST-nya </p>
+
+
+        </section>
+
+        <section id="kruskal">
+            <h2>Algoritma Kruskal</h2>
+            <p>Algoritma Kruskal adalah algoritma greedy (rakus) yang digunakan untuk mencari Minimum Spanning Tree (MST) dari sebuah graf berbobot dan tidak berarah. Algoritma Kruskal adalah salah satu metode untuk menemukan Minimum Spanning Tree (MST)
+                dari sebuah graf berbobot. Prinsip kerja Kruskal sangat sederhana: selalu pilih sisi dengan bobot terkecil yang belum membentuk siklus, sampai semua simpul terhubung. </p>
+            <p>Berikut langkah-langkah utama dari algoritma Kruskal:</p>
+            <p>Lihat contoh <a href="#GBerbobot" class="pGB">Graf Berbobot</a> di mana kita akan mencari MST dari graf tersebut.
+            </p>
+            <ol>
+                <li>Urutkan semua sisi (edge) berdasarkan bobotnya dari kecil ke besar.</li>
+                <ol class="olLangkah1">
+                    <li>BD dengan bobot 3</li>
+                    <li>AB dengan bobot 5</li>
+                    <li>AC dengan bobot 6</li>
+                    <li>CD dengan bobot 8</li>
+                </ol>
+                <li>Ambil sisi dengan bobot terkecil dan tambahkan ke MST jika tidak membentuk siklus.</li>
+                <ol class="olLangkah1">
+                    <li>BD dengan bobot 3</li>
+                    <li>AB dengan bobot 5</li>
+                    <li>AC dengan bobot 6</li>
+                </ol>
+                <li>Setelah semua sisi diambil, maka MST sudah terbentuk, lihat graf di bawah.</li>
+                <p> </p>
+                <img src="../foto/gambarGlangkahKruskal.png" class="gambarContoh" />
+                <p>Setelah itu hitung semua bobot (6 + 5 + 3 = 14). Maka diperoleh total bobot MST-nya sebesar 14.</p>
+            </ol>
+            <p>Saat algoritma Kruskal memilih sisi dengan bobot terkecil, kita harus berhati-hati agar tidak membentuk siklus. <strong>Siklus</strong> adalah kondisi di mana kamu bisa kembali ke titik awal hanya dengan mengikuti sisi-sisi yang sudah dipilih
+                ini tidak boleh terjadi dalam pohon merentang minimum (MST).</p>
+            <p>Sebagai contoh sederhana, bayangkan kamu ingin menghubungkan beberapa komputer dalam jaringan, tetapi ingin memakai kabel sesedikit dan sehemat mungkin. Kruskal akan memilih kabel-kabel terpendek dulu, dan memastikan semua komputer terhubung
+                tanpa ada kabel yang dipasang dua kali ke jalur yang sama.</p>
+            <p>Di Kruskalofix, kamu bisa melihat proses ini divisualisasikan secara langsung. Setiap sisi yang dipilih akan ditandai, dan kamu bisa mengikuti langkah demi langkah bagaimana pohon merentang minimum terbentuk.</p>
+        </section>
+
+        <a href="../html/jurnal.html" class="button" target="_blank">Lihat Jurnal Kami</a>
+        <a href="../html/cariMSTwarnet.html" class="button">Lanjut ke Simulasi</a>
+    </div>
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer_container">
+            <!-- Kolom Logo + Deskripsi -->
+            <div class="footer_col logo_col">
+                <a href="../index.html" class="footer_logo_wrap">
+                    <img src="../foto/logoKruskalofix.png" alt="Logo" class="footer_logo" />
+                    <span class="footer_nama">Kruskalofix</span>
+                </a>
+                <p class="footer_desc">
+                    Bangun jaringan komputer yang optimal dan hemat biaya. Dengan algoritma Kruskal, temukan struktur jaringan tercepat, paling stabil, tanpa kabel yang berlebihan.
+                </p>
+            </div>
+
+            <!-- Kolom Tautan -->
+            <div class="footer_col">
+                <h4>Menu</h4>
+                <ul class="footer_links">
+                    <li><a href="../index.html">Beranda</a></li>
+                    <li class="dropdown">
+                        <a href="#">Fitur</a>
+                        <ul class="dropdown-content">
+                            <li><a href="../html/cariMSTwarnet.html">Simulasi Kruskal</a></li>
+                            <li><a href="../html/materi.html">Pelajari Materi</a></li>
+                            <li><a href="../html/jurnal.html" target="_blank">Lihat Jurnal Kami</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../html/tentangkami.html">Tentang Kami</li>
+        </ul>
+      </div>
+
+      <!-- Kolom Materi -->
+      <div class="footer_col">
+        <h4><a href="../html/materi.html" style="color: #00FF08; text-decoration: none;">Pelajari</a></h4>
+                        <ul class="footer_links">
+                            <li><a href="../html/materi.html#graf">Graf</a></li>
+                            <li><a href="../html/materi.html#pohon">Pohon</a></li>
+                            <li><a href="../html/materi.html#mst">Minimum Spanning Tree</a></li>
+                            <li><a href="../html/materi.html#kruskal">Algoritma Kruskal</a></li>
+                        </ul>
+            </div>
+
+            <!-- Kolom Kontak -->
+            <div class="footer_col kanan">
+                <h4>Kontak Kami</h4>
+                <ul class="footer_kontak">
+                    <li><a href="#">+62 898-7096-566</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/results?search_query=algoritma+kruskal" target="_blank">Youtube</a></li>
+                    <li><a href="#">kruskal@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bar bawah -->
+        <footer style="background-color: black; color: white; text-align: center; padding: 10px; font-family: 'Poppins', sans-serif;">
+            <p>© 2025 Kruskalofix. All rights reserved.</p>
+            <p style="margin-top: -16px;">
+                <a href="privacy-policy.html" style="color: #00ff88; text-decoration: none;">Privacy Policy</a> |
+                <a href="terms-of-service.html" style="color: #00ff88; text-decoration: none;">Terms of Service</a> |
+                <a href="cookies-policy.html" style="color: #00ff88; text-decoration: none;">Cookies Policy</a>
+            </p>
+        </footer>
+    </footer>
+    <!-- Footer -->
+
+</body>
+
+</html>

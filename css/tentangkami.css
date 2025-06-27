@@ -1,0 +1,350 @@
+/* Reset dasar */
+*,
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #111;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00ff88;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00ffaa;
+    box-shadow: 0 0 15px #00ffaa, 0 0 25px #00ffaa;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #00ff88 #111;
+}
+
+/* Navbar */
+#pembungkusNavbar {
+    background-color: white;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#navbar {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pembungkusNama {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    list-style-type: none;
+    font-size: 25px;
+}
+
+.garis {
+    width: 1px;
+    height: 30px;
+    background-color: white;
+    margin: 0 10px;
+    opacity: 0.5;
+}
+
+.aLogo {
+    text-decoration: none;
+    color: #00FF08;
+}
+
+.kruskalofix {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.pembungkusMenu {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+#tentangKami {
+    padding-right: 10px;
+}
+
+.a:hover {
+    color: rgb(0, 255, 8);
+}
+
+/* Tentang Kami */
+header h1 {
+    text-align: center;
+    color: #00ff66;
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.asal-mula {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.asal-mula p {
+    font-size: 1.1rem;
+    color: #eee;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.about_us {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.about_us h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #00ff66;
+    margin-bottom: 3rem;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+figure img {
+    width: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
+}
+
+figcaption {
+    font-size: 0.95rem;
+    color: #ccc;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+figcaption a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.foto-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    gap: 2rem;
+}
+
+.foto-1 figure {
+    flex: 1;
+    text-align: center;
+}
+
+.foto-1 img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.foto-1 p {
+    flex: 1;
+    font-size: 1.1rem;
+    color: #eee;
+    text-align: justify;
+}
+
+.foto-1:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: black;
+    padding-top: 1rem;
+    color: white;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.footer_col {
+    flex: 1;
+    min-width: 200px;
+    max-width: 33%;
+}
+
+.logo_col {
+    margin-left: -100px;
+}
+
+.footer_logo_wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
+
+.footer_logo {
+    width: 40px;
+}
+
+.footer_nama {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footer_desc {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+}
+
+.footer_col h4 {
+    margin-bottom: 1rem;
+    margin-left: 100px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #00FF08;
+}
+
+.footer_col.kanan h4 {
+    margin-left: 130px;
+}
+
+.footer_links,
+.footer_kontak {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+.footer_links {
+    margin-left: 100px;
+}
+
+.footer_kontak {
+    margin-left: 130px;
+}
+
+.footer_links a,
+.footer_kontak a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer_links a:hover,
+.footer_kontak a:hover {
+    color: #00FF08;
+}
+
+/* Footer Bawah */
+.footer_bar {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer_bar a {
+    color: #00ff88;
+    text-decoration: none;
+}
+
+.footer_bar a:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #111;
+    min-width: 180px;
+    box-shadow: 0 0 10px #00ff88;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    border-radius: 8px;
+    padding: 10px 0;
+}
+
+.dropdown-content li {
+    list-style: none;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #00ff88;
+    font-weight: bold;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

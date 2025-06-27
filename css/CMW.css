@@ -1,0 +1,400 @@
+/* style.css */
+*,
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #111;
+    color: white;
+}
+
+/* SCROOL BAR */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111;
+    /* warna latar belakang scrollbar */
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00ff88;
+    /* warna neon hijau */
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
+    /* efek glow */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00ffaa;
+    box-shadow: 0 0 15px #00ffaa, 0 0 25px #00ffaa;
+    /* glow lebih terang saat hover */
+}
+
+/* Untuk Firefox */
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #00ff88 #111;
+}
+
+/* SCROOL BAR END */
+
+#pembungkusNavbar {
+    background-color: white;
+}
+
+#navbar {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pembungkusNama {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.garis {
+    width: 1px;
+    height: 30px;
+    background-color: white;
+    margin: 0 10px;
+    opacity: 0.5;
+}
+
+.aLogo {
+    text-decoration: none;
+    color: #00FF08;
+}
+
+.kruskalofix {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.pembungkusMenu {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+#tentangKami {
+    padding-right: 10px;
+}
+
+.a:hover {
+    color: rgb(0, 255, 8);
+}
+
+/* CONTAINER */
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00ff88;
+}
+
+h1 {
+    text-align: center;
+    color: #00FF08;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+input,
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-color: #00ff88;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #00FF08;
+}
+
+input {
+    width: 60%;
+}
+
+input:focus {
+    outline: 2px solid #00ff88;
+}
+
+.edges,
+.hasil {
+    margin-top: 20px;
+}
+
+h3 {
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+th {
+    background-color: #00FF08;
+    color: black;
+}
+
+tbody tr {
+    background-color: white;
+    color: black;
+}
+
+#totalBobot,
+#totalBiaya {
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10px;
+    color: white;
+}
+
+.ulangi {
+    padding: 12px 25px;
+    margin-top: 10px;
+    background-color: #00ff88;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.ulangi:hover,
+.tutorial:hover {
+    background-color: #00FF08;
+}
+
+#daftarSisi {
+    list-style-type: circle;
+    padding-left: 17px;
+}
+footer {
+    background-color: black;
+    padding-top: 1rem;
+    color: white;
+}
+
+.footer_col.logo_col {
+    flex: 1.5;
+    max-width: 300px;
+}
+
+.footer_logo_wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
+
+.footer_logo {
+    width: 40px;
+    height: auto;
+}
+
+.footer_nama {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footer_desc {
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: center;
+    /* <-- sebelumnya space-between */
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    flex-wrap: wrap;
+    gap: 3rem;
+    /* beri jarak antar kolom, bukan sisi luar */
+}
+
+
+/* Semua Kolom */
+.footer_col {
+    flex: 1;
+    min-width: 200px;
+    max-width: 33%;
+}
+
+.logo_col {
+    margin-left: -100px;
+}
+
+
+.footer_col h4 {
+    margin-bottom: 1rem;
+    margin-left: 100px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #00FF08;
+    text-align: left;
+}
+
+.footer_links {
+    display: flex;
+    margin-left: 100px;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+}
+.footer_col.kanan h4 {
+    margin-bottom: 1rem;
+    margin-left: 130px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #00FF08;
+    text-align: left;
+}
+.footer_sosial,
+.footer_kontak {
+    display: flex;
+    margin-left: 130px;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+.footer_links a,
+.footer_sosial a,
+.footer_kontak a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer_links a:hover,
+.footer_sosial a:hover,
+.footer_kontak a:hover {
+    color: #00FF08;
+}
+
+/* Kolom tengah (opsional, biar teks rata tengah) */
+.footer_col.tengah {
+    text-align: left;
+}
+
+.footer_col.kanan {
+    text-align: left;
+}
+
+/* Footer bawah */
+.footer_bar {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #00FF08;
+    border-top: 1px solid #00FF08;
+    margin-top: 1rem;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #111;
+    min-width: 180px;
+    box-shadow: 0 0 10px #00ff88;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    border-radius: 8px;
+    padding: 10px 0;
+}
+
+.dropdown-content li {
+    list-style: none;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #00ff88;
+    font-weight: bold;
+    color: black;
+}
+
+/* Tampilkan dropdown saat hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
