@@ -1,4 +1,5 @@
 /* style.css */
+
 *,
 html {
     padding: 0;
@@ -11,6 +12,7 @@ body {
     background-color: #111;
     color: white;
 }
+
 
 /* SCROOL BAR */
 
@@ -38,11 +40,14 @@ body {
     /* glow lebih terang saat hover */
 }
 
+
 /* Untuk Firefox */
+
 body {
     scrollbar-width: thin;
     scrollbar-color: #00ff88 #111;
 }
+
 
 /* SCROOL BAR END */
 
@@ -112,7 +117,9 @@ body {
     color: rgb(0, 255, 8);
 }
 
+
 /* CONTAINER */
+
 .container {
     max-width: 700px;
     margin: 40px auto;
@@ -224,10 +231,16 @@ tbody tr {
     background-color: #00FF08;
 }
 
+.tutorial {
+    margin-left: 14px;
+    /* opsional: kasih jarak ke kiri juga kalau perlu */
+}
+
 #daftarSisi {
     list-style-type: circle;
     padding-left: 17px;
 }
+
 footer {
     background-color: black;
     padding-top: 1rem;
@@ -280,6 +293,7 @@ footer {
 
 
 /* Semua Kolom */
+
 .footer_col {
     flex: 1;
     min-width: 200px;
@@ -289,7 +303,6 @@ footer {
 .logo_col {
     margin-left: -100px;
 }
-
 
 .footer_col h4 {
     margin-bottom: 1rem;
@@ -308,6 +321,7 @@ footer {
     list-style: none;
     padding: 0;
 }
+
 .footer_col.kanan h4 {
     margin-bottom: 1rem;
     margin-left: 130px;
@@ -316,6 +330,7 @@ footer {
     color: #00FF08;
     text-align: left;
 }
+
 .footer_sosial,
 .footer_kontak {
     display: flex;
@@ -339,7 +354,9 @@ footer {
     color: #00FF08;
 }
 
+
 /* Kolom tengah (opsional, biar teks rata tengah) */
+
 .footer_col.tengah {
     text-align: left;
 }
@@ -348,7 +365,9 @@ footer {
     text-align: left;
 }
 
+
 /* Footer bawah */
+
 .footer_bar {
     text-align: center;
     padding: 1rem;
@@ -358,7 +377,9 @@ footer {
     margin-top: 1rem;
 }
 
+
 /* Dropdown Menu */
+
 .dropdown {
     position: relative;
 }
@@ -394,7 +415,9 @@ footer {
     color: black;
 }
 
+
 /* Tampilkan dropdown saat hover */
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
